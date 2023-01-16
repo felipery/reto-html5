@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'Redhat';
+  src: url('../font/RedHatDisplay-VariableFont_wght.ttf');
+}
+* {
+  margin: 0px;
+}
+body {
+  background-color: #e6edff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Redhat';
+}
+.background {
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  background-image: url(../img/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.resume-card {
+  height: 700px;
+  width: 450px;
+  position: absolute;
+  top: 70px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 10px 40px rgba(102, 101, 101, 0.473);
+}
+
+.dibujo-musica {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.plan-info {
+  width: 340px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 90px 180px 80px;
+  grid-template-rows: 100px;
+  background-color: #bdc7d417;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.musical-note {
+  padding-left: 25px;
+}
+.pay-button {
+  background-color: #0004ff;
+  width: 340px;
+  height: 45px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(81, 81, 81, 0.433);
+  border: none;
+}
+.pay-button:hover {
+  background-color: #9494e7;
+}
+.cancel-button {
+  margin-top: 40px;
+  border: none;
+  background-color: rgba(116, 108, 108, 0);
+  color: rgb(83, 82, 82);
+}
+.cancel-button:hover {
+  font-weight: bold;
+  color: black;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 55px;
+}
+h1 {
+  font-weight: 800;
+  font-size: 30px;
+}
+p {
+  font-size: 16px;
+  color: rgb(88, 88, 88);
+  font-weight: 500;
+}
+.description {
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.plan {
+  font-weight: bold;
+  color: black;
+}
+.price {
+  font-weight: 500;
+  color: rgb(103, 103, 103);
+}
+.change-plan {
+  text-decoration: none;
+}
+
+@media (max-width: 375px) {
+  .fondo {
+    background-image: url('../img/pattern-background-mobile.svg');
+    width: 420px;
+    height: 200px;
+    background-size: cover;
+  }
+  .card {
+    width: 340px;
+    margin-left: 10px;
+    height: 600px;
+  }
+  .dibujo-musica {
+    width: 340px;
+  }
+  .plan-info {
+    width: 290px;
+    margin-bottom: 15px;
+    grid-template-columns: 85px 130px 80px;
+  }
+  .content {
+    padding-top: 25px;
+  }
+  .musical-note {
+    margin-left: 5px;
+  }
+  .plan {
+    margin-left: 10px;
+  }
+
+  .pay-button {
+    width: 296px;
+  }
+  .cancel-button {
+    font-weight: 900;
+    color: rgb(146, 146, 146);
+  }
+  br {
+    display: none;
+  }
+  .description {
+    letter-spacing: 0px;
+    margin-left: 40px;
+    margin-right: 35px;
+  }
+}
